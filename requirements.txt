@@ -1,5 +1,4 @@
 pandas 
-notebook 
 numpy
 scikit-learn
 matplotlib
@@ -10,5 +9,5 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
-python-box
+python-box==6.0.2
 -e .
