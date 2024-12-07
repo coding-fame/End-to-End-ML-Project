@@ -7,9 +7,9 @@ with open("README.md", "r", encoding="utf-8") as f:
 __version__ = "0.0.0"
 
 REPO_NAME = "End-to-end-ML-Project"
-AUTHOR_USER_NAME = "entbappy"
+AUTHOR_USER_NAME = "coding-fame"
 SRC_REPO = "mlProject"
-AUTHOR_EMAIL = "entbappy73@gmail.com"
+AUTHOR_EMAIL = "gaajanana@gmail.com"
 
 
 setuptools.setup(
@@ -25,5 +25,5 @@ setuptools.setup(
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
+    packages=setuptools.find_packages(where="src"),
 )
