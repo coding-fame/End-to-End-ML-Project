@@ -9,3 +9,50 @@
 7. Update the pipeline 
 8. Update the main.py
 9. Update the app.py
+
+1. Update config.yaml
+---------------------
+it is in config directory named config.yaml
+
+2. Update schema.yaml
+---------------------
+it at the time of training the model
+
+3. Update params.yaml
+----------------------
+when initializing the model which having different parameters. 
+Here we defined them. If we improve performace of the model, then we just change in parametes.
+
+
+4. Update the entity
+--------------------
+mlProject --> entity --> config.py
+
+5. Update the configuration manager in src config
+--------------------------------------------------
+mlProject --> config --> configuration.py
+
+
+6. Update the components
+------------------------
+mlProject --> components 
+Here we create different moduls.
+data_ingestion.py
+data_validation.py
+data_transformation.py
+
+7. Update the pipeline 
+----------------------
+mlProject --> pipeline
+Here we create different moduls.
+training_pipline.py
+prediction_pipline.py
+
+8. Update the main.py
+---------------------
+this is end point of this project.
+we can use to start pipelines
+
+9. Update the app.py
+-------------------
+API parameters
