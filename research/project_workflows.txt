@@ -10,8 +10,8 @@
 8. Update the main.py
 9. Update the app.py
 
-------------------------------------------------------------------------------------------------
-----------------------------X Part ->1: Data Ingestion components X --------------------------------------------------
+------------------------------------------------------------------------------------
+--------------X Part ->1: Data Ingestion components X ------------------------------
 
 First Do experiment in 01_data_ingestation.ipynb
 
@@ -20,20 +20,50 @@ First Do experiment in 01_data_ingestation.ipynb
 it is in config directory named config.yaml
 
 artifacts_root
+----------------
+when you download data store inot LFS that is artifacts\\data_ingestation\\wine.zip
+
 
 2. Update schema.yaml
 ---------------------
 it at the time of training the model
+
+schema of data that is dtype of data types.
+this come from df.info from research.ipynb
+
+COLUMNS:
+  fixed acidity: float64
+  volatile acidity: float64
+  citric acid: float64
+  residual sugar: float64
+  chlorides: float64
+  free sulfur dioxide: float64
+  total sulfur dioxide: float64
+  density: float64
+  pH: float64
+  sulphates: float64
+  alcohol: float64
+  quality: int64
+
+
+TARGET_COLUMN:
+  name: quality
+
 
 3. Update params.yaml
 ----------------------
 when initializing the model which having different parameters. 
 Here we defined them. If we improve performace of the model, then we just change in parametes.
 
+here we create dummy parameters to avoid errors.
+
+key: value
 
 4. Update the entity
 --------------------
 mlProject --> entity --> config.py
+
+from datacl
 
 5. Update the configuration manager in src config
 --------------------------------------------------
@@ -66,10 +96,15 @@ API parameters
 
 ------------------------------------------------------------------------------------------------
 ----------------------------X Part ->2: Data Validation X --------------------------------------------------
+validate columns data --> all feature are fine or not
+
 
 
 ------------------------------------------------------------------------------------------------
 ----------------------------X Part ->3: Data Transformation X --------------------------------------------------
+we can use various thnigs
+but now only train_test_split 
+
 
 ------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------
